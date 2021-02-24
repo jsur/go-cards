@@ -38,6 +38,7 @@ func newDeck() deck {
 }
 
 func deal(d deck, handSize int) (deck, deck) {
+	// select a range, i.e. subset of a slice, with d[a:b]
 	return d[:handSize], d[handSize:]
 }
 
